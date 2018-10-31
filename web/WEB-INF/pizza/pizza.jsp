@@ -33,7 +33,9 @@
     </table>
     <c:forEach var="pizza" items="${pizza}">
         <div id="pizza-container-image" class="containerimg">
-            <a href=""> <img src="${pizza.url_image}" alt="pizza ${pizza.libelle}"></a>
+            <a href="/detailpizza?id=${pizza.id}&libelle=${pizza.libelle}&prix=${pizza.prix}&reference=${pizza.reference}&url=${pizza.url_image}">
+                <img src="${pizza.url_image}" alt="pizza ${pizza.libelle}">
+            </a>
             <p class="nom-pizza">${pizza.libelle}</p>
             <p class="prix">${pizza.prix}€</p>
         </div>

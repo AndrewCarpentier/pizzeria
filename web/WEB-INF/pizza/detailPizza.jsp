@@ -8,9 +8,35 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Detail Pizza</title>
+    <link rel="stylesheet" href="../../ressources/css/pizza/detailPizza.css">
 </head>
 <body>
+    <div id="pizza-container-image" class="containerimg">
+        <a href=""> <img src="${url}" alt="pizza ${libelle}"></a>
+        <h4>Nom de la pizza</h4>
+            <p class="nom-pizza">${libelle}</p>
+        <h4>Reference de la pizza</h4>
+            <p class="ref-pizza">${reference}</p>
+        <h4>Prix de la pizza</h4>
+            <p class="prix">${prix}€</p>
+        <h4>Url de l'image</h4>
+            <p class="urlImg-pizza">${url}</p>
 
+        <a href="/modifierpizza?id=${id}">
+            <button>modifier</button> <br/>
+        </a>
+        <br/><br/>
+        <a href="/deletepizza?id=${id}">
+            <button>Supprimer</button>
+        </a>
+        <br/><br/>
+        <a href="/pizza">
+            <button>Retour à la page pizza</button>
+        </a>
+
+
+
+    </div>
 </body>
 </html>
