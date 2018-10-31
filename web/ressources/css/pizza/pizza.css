@@ -1,4 +1,50 @@
 table,th,td{
-    border: red 2px solid;
+    border: darkblue 2px solid;
     border-collapse: collapse;
+}
+
+#pizza-container-image{
+    bottom: 20px;
+    position: relative;
+    top: 60px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-top: 3%;
+    border: white 3px solid;
+
+}
+img:hover{
+    border: darkblue 3px solid;
+    cursor : pointer;
+}
+
+.prix{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    background-color: darkblue;
+    opacity: 0.6;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.containerimg {
+    position: relative;
+    display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.nom-pizza{
+    position: center;
+    background-color: darkblue;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
 }

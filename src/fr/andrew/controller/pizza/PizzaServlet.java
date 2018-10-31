@@ -15,12 +15,10 @@ public class PizzaServlet extends HttpServlet {
         private PizzaBusiness pizzaBusiness = new PizzaBusiness();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("pizza",pizzaBusiness.getPizza());
-
         this.getServletContext().getRequestDispatcher("/WEB-INF/pizza/pizza.jsp").forward(request,response);
     }
 }

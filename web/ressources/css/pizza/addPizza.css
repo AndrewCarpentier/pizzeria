@@ -1,0 +1,17 @@
+input{
+    width: 300px;
+    height: 20px;
+    color: white;
+    border: white 2px solid;
+    background-color: darkblue;
+}
+
+input:hover{
+    border: darkblue 2px solid;
+}
+
+#addpizza-form{
+
+    margin-left: 40%;
+    margin-right: 40%;
+}

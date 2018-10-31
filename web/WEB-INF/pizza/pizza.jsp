@@ -13,23 +13,30 @@
     <link rel="stylesheet" href="../../ressources/css/pizza/pizza.css">
 </head>
 <body>
+    <a href="/addpizza">Ajout d'une pizza</a>
+
     <table>
         <tr>
             <th>id</th>
             <th>libelle</th>
             <th>reference</th>
             <th>prix</th>
-            <th>url</th>
         </tr>
-        <c:forEach var="pizza" items="${pizza }">
+        <c:forEach var="pizza" items="${pizza}">
             <tr>
                 <td>${pizza.id}</td>
                 <td>${pizza.libelle}</td>
                 <td>${pizza.reference}</td>
                 <td>${pizza.prix}</td>
-                <td>${pizza.url_image}</td>
             </tr>
         </c:forEach>
     </table>
+    <c:forEach var="pizza" items="${pizza}">
+        <div id="pizza-container-image" class="containerimg">
+            <a href=""> <img src="${pizza.url_image}" alt="pizza ${pizza.libelle}"></a>
+            <p class="nom-pizza">${pizza.libelle}</p>
+            <p class="prix">${pizza.prix}€</p>
+        </div>
+    </c:forEach>
 </body>
 </html>
