@@ -1408,7 +1408,7 @@
     </column>
     <column id="350" parent="335" name="libelle">
       <Position>2</Position>
-      <DataType>varchar(2295)|0s</DataType>
+      <DataType>varchar(765)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="351" parent="335" name="reference">
@@ -1423,7 +1423,7 @@
     </column>
     <column id="353" parent="335" name="url_image">
       <Position>5</Position>
-      <DataType>varchar(2295)|0s</DataType>
+      <DataType>varchar(765)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="354" parent="335" name="PRIMARY">
@@ -1434,16 +1434,18 @@
     <column id="355" parent="336" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="356" parent="336" name="libelle">
       <Position>2</Position>
-      <DataType>varchar(6885)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="357" parent="336" name="reference">
       <Position>3</Position>
-      <DataType>varchar(2295)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="358" parent="336" name="prix">
@@ -1453,8 +1455,13 @@
     </column>
     <column id="359" parent="336" name="url_image">
       <Position>5</Position>
-      <DataType>varchar(6885)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
+    <key id="360" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

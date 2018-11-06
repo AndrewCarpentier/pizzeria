@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../ressources/css/pizza/pizza.css">
 </head>
 <body>
-    <a href="/addpizza">Ajout d'une pizza</a>
+    <a href="addpizza">Ajout d'une pizza</a>
 
     <table>
         <tr>
@@ -25,7 +25,11 @@
         <c:forEach var="pizza" items="${pizza}">
             <tr>
                 <td>${pizza.id}</td>
-                <td>${pizza.libelle}</td>
+                <td>
+                    <a href="detailpizza?id=${pizza.id}&libelle=${pizza.libelle}&prix=${pizza.prix}&reference=${pizza.reference}&url=${pizza.url_image}">
+                        ${pizza.libelle}
+                    </a>
+                </td>
                 <td>${pizza.reference}</td>
                 <td>${pizza.prix}</td>
             </tr>
@@ -33,7 +37,7 @@
     </table>
     <c:forEach var="pizza" items="${pizza}">
         <div id="pizza-container-image" class="containerimg">
-            <a href="/detailpizza?id=${pizza.id}&libelle=${pizza.libelle}&prix=${pizza.prix}&reference=${pizza.reference}&url=${pizza.url_image}">
+            <a href="detailpizza?id=${pizza.id}&libelle=${pizza.libelle}&prix=${pizza.prix}&reference=${pizza.reference}&url=${pizza.url_image}">
                 <img src="${pizza.url_image}" alt="pizza ${pizza.libelle}">
             </a>
             <p class="nom-pizza">${pizza.libelle}</p>

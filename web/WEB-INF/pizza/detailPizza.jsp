@@ -20,8 +20,8 @@
             <p class="ref-pizza">${reference}</p>
         <h4>Prix de la pizza</h4>
             <p class="prix">${prix}€</p>
-        <h4>Url de l'image</h4>
-            <p class="urlImg-pizza">${url}</p>
+        <h4 hidden>Url de l'image</h4>
+            <p hidden class="urlImg-pizza">${url}</p>
 
         <a href="/modifierpizza?id=${id}">
             <button>modifier</button> <br/>
